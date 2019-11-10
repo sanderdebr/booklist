@@ -1,0 +1,22 @@
+.alert {
+    text-align: center;
+    position: fixed;
+    right: 0;
+    animation: jump 2s ease;
+}
+
+@keyframes jump {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    15%, 85% {
+        display: block;
+        opacity: 1;
+        transform: translate(-25vw, 0);
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
